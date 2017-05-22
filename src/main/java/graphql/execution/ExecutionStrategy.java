@@ -63,7 +63,7 @@ public abstract class ExecutionStrategy {
             ExecutionContext executionContext,
             GraphQLFieldDefinition fieldDef,
             Map<String, Object> argumentValues,
-            Exception e) {
+            Throwable e) {
         executionContext.addError(new ExceptionWhileDataFetching(e));
     }
 
